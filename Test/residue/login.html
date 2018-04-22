@@ -1,0 +1,101 @@
+<!--<?php
+  include('login.php');
+  include('connections.php');
+  session_start();
+?>-->
+<!DOCTYPE html>
+<html>
+
+<title>Log in to Erudito Restaurant</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<meta name="format-detection" content="telephone=no"/>
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="css/grid.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/camera.css">
+<link rel="stylesheet" href="css/jquery.fancybox.css">
+<script src="js/jquery.js"></script>
+<script src="js/jquery-migrate-1.2.1.js"></script>
+<script src='js/device.min.js'></script>
+<style>
+html {
+  background: url(pictures/login_bg.jpg) no-repeat center  fixed;
+  background-size: cover;
+
+}
+
+</style>
+<body>
+<header>
+ <!-- Sidebar (hidden by default) -->
+  <div class="toggle-menu-container">
+    <nav class="nav">
+      <div class="nav_title"></div>
+        <a class="sf-menu-toggle fa fa-bars"></a>
+          <ul class="sf-menu">
+            <li class="active">
+              <a href="index.php">Home</a>
+            </li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="menu.php">Erudito Menu</a>
+            </li>
+            <li>
+              <a href="login.html">Log in</a>
+            </li>
+            <li>
+              <a href="sign_up.php">Sign up</a>
+            </li>
+            <li>
+              <a href="order.html">Order Online</a>
+            </li>
+            <li>
+             <a href="javascript:void(0)" onclick="w3_close()">Close</a>
+            </li>
+          </ul>
+          </nav>
+        </div>
+</header>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+  <div class="w3-container w3-padding-32 w3-center">
+    <!--<img src="login.jpeg" alt="food" class="w3-image" style="display:block;margin:auto" width="800" height="533">-->
+    <div class="w3-padding-32">
+    <br>
+  <form name="insert" method="POST" action="login.php">
+    <label>Username:</label>
+    <input type="text" name="username">
+    <br>
+    <br>
+    <label>Password:</label>
+    <input type="password" name="password">
+    <br>
+    <br>
+    <input type="submit" name="Submit">
+  </form>
+  </div>
+
+
+<!-- End page content -->
+</div>
+</div>
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+<script src="js/script.js"></script>
+</body>
+</html>

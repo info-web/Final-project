@@ -1,0 +1,15 @@
+body, #Projects{
+  align-content: center;
+  font-family: "georgia", sans-serif;
+  background-color:  #85929E;
+  /* background : url(pictures/bgnd.jpg) no-repeat center  fixed;
+  background-size: cover; */
+}
+.container {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+html, body, .container {
+  height: 100%;
+}
